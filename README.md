@@ -34,7 +34,7 @@ Feel free to modify the content and styles in the HTML and CSS sections to suit 
 This project is licensed under the MIT License. 
 
 ## Link
-You can view the live website here: [Dens Tobacco & Cigar Live](https://github.com/DandyWildan95/revou-intro.git)
+You can view the live website here: (https://github.com/DandyWildan95/revou-intro.git)
 )
 
 ## Contact
