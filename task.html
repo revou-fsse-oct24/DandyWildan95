@@ -1,79 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- internal css -->
-<style>
-    
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: yellow; /* Yellow background */
-    }
-    
-    header {
-        background: #333;
-        color: #fff;
-        padding: 1rem 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    nav ul {
-        list-style: none;
-        display: flex;
-    }
-    
-    nav ul li {
-        margin: 0 15px;
-    }
-    
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    main {
-        display: flex;
-        padding: 20px;
-    }
-    
-    .content {
-        flex: 2;
-        padding: 20px;
-    }
-    
-    .sidebar {
-        flex: 1;
-        padding: 20px;
-        background: #f4f4f4;
-    }
-    
-    footer {
-        text-align: center;
-        padding: 1rem 0;
-        background: #333;
-        color: #fff;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-    
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-        main {
-            flex-direction: column;
-        }
-    
-        .sidebar {
-            margin-top: 20px;
-        }
-    }
-    </style>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dens Tobacco & Cigar</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: yellow; /* Yellow background */
+            margin: 0; /* Remove default margin */
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; /* Make the header sticky */
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Stack elements vertically */
+            }
+
+            .content {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
+
+            .sidebar {
+                margin-top: 20px;
+            }
+
+            nav ul {
+                flex-direction: column; /* Stack nav items vertically */
+                align-items: center; /* Center items */
+            }
+
+            nav ul li {
+                margin: 10px 0; /* Add margin for spacing */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -90,54 +110,63 @@
 
     <main>
         <section id="home" class="content">
-            <img src="asset/Dens Tobacco.jpg"  width="400" height="400">
-          </section>  
+            <img src="img/Dens Tobacco.jpg.jpg" alt="Dens Tobacco" style="width: 300px; height: auto;">
+
+        </section>
 
         <section id="about" class="content">
             <h2>About Us</h2>
-            <p>Dens Tobacco and Cigar shop established since 2020 until now presents the best quality tobacco and complete equipment for Indonesian tobacco lovers.</p>
+            <p>Dens Tobacco and Cigar shop has been established since 2020, offering the best quality tobacco and complete equipment for Indonesian tobacco lovers.</p>
         </section>
-          <!-- ini input type text -->
+
         <section id="contact" class="content">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <form action="#" method="post" style="max-width: 400px; margin: auto;">
+                <div style="margin-bottom: 1rem;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <div style="margin-bottom: 1rem;">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
 
-                <fieldset>
+                <fieldset style="margin-bottom: 1rem; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
                     <legend>Preferred Contact Method:</legend>
                     <label>
                         <input type="radio" name="contact-method" value="email" required>
                         Email
-                    </label>
+                    </label><br>
                     <label>
                         <input type="radio" name="contact-method" value="phone">
                         Phone
                     </label>
                 </fieldset>
 
-                <label>
-                    <input type="checkbox" name="subscribe" value="yes">
-                    Subscribe to our newsletter
-                </label>
+                <div style="margin-bottom: 1rem;">
+                    <label>
+                        <input type="checkbox" name="subscribe" value="yes">
+                        Subscribe to our newsletter
+                    </label>
+                </div>
 
-                <label for="Catalog">Choose an option:</label>
-                <select id="Catalog" name="Catalog">
-                    <option value="Catalog Tembakau">Catalog Tembakau </option>
-                    <option value="Catalog Cerutu">Catalog Cerutu</option>
-                    <option value="Catalog Aksesoris">Catalog Aksesoris</option>
-                </select>
-               <!-- ini submit button -->
-                <button type="submit">Submit</button>
+                <div style="margin-bottom: 1rem;">
+                    <label for="Catalog">Choose an option:</label>
+                    <select id="Catalog" name="Catalog" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="Catalog Tembakau">Catalog Tembakau</option>
+                        <option value="Catalog Cerutu">Catalog Cerutu</option>
+                        <option value="Catalog Aksesoris">Catalog Aksesoris</option>
+                    </select>
+                </div>
+
+                <button type="submit" style="background-color: #333; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 Dens Tobacco & Cigar. All rights reserved.</p>
     </footer>
 </body>
 </html>
