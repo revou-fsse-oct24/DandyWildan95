@@ -1,6 +1,6 @@
 # Modul 1 Dandy Wildan
 
-# Dens Tobacco & Cigar Website
+# Dens Tobacco & Cigar 
 
 This project is a simple, responsive website for **Dens Tobacco & Cigar**, a shop established in 2020. The site provides essential information about the shop, including a brief overview of its offerings and a contact form for customer inquiries.
 
