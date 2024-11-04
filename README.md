@@ -35,7 +35,7 @@ This project is a simple, responsive website for **Dens Tobacco & Cigar**, a sho
 
 To view the website:
 
-1. follow this link https://dandywildan95.github.io/revou-intro/
+1. follow this link https://revou-fsse-oct24.github.io/DandyWildan95/
 
 
 
